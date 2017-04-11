@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BacBake</title>
+    <link rel="icon" href="favicon.ico">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.form/4.1.0/jquery.form.min.js" integrity="sha384-pg7GKHZrgICSnX14mRuztzbN1Bm75xUKyCyzDCUbkOp0nHzgGYqiLsc6XpflqxAc" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/desktop.css">
+    <script src="scripts/desktop.js"></script>
+</head>
+<header>
+    <ul class="topnav" id="nav">
+        <li><a id="link1" href="#Home"><i class="fa fa-home"></i></a></li>
+        <li><a id="link2" href="#Product">Προϊόν</a></li>
+        <li><a id="link3" href="#News">Νέα</a></li>
+        <li><a id="link4" href="#Specs">Χαρακτηριστικά</a></li>
+        <li><a id="link5" href="#Tests">Ποιοτικός Έλεγχος</a></li>
+        <li><a id="link5" href="#Bibliography">Βιβλιογραφία</a></li>
+        <li><a id="link5" href="#Instructions">Οδηγίες</a></li>
+        <li><a id="link6" href="#Buy">On-Line Παραγγελία</a></li>
+        <li><a id="link9" href="#Sponsors">Χορηγοί</a></li>
+        <li><a id="link7" href="#About">About Us</a></li>
+        <li><a id="link8" href="#Team">Η Ομάδα</a></li>
+        <li><a id="link7" href="#Contact">Επικοινωνία</a></li>
+        <li class="icon" id="hamicon">
+            <a href="javascript:void(0);" onclick="checkResponsive()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        </li>
+    </ul>
+    <div class="knockdown">
+    </div>
+</header>
+
+<body>
+    <div class="column" id="column_a">
+        <a class="anchor" id="Home"></a>
+        <div class="panel" id="home">
+            <div class="cover">
+                <img class="coverlogo" src="resources/LogoCoverT.png">
+            </div>
+            <div class="logobox">
+                <div class="schlogocontainer">
+                    <img class="schlogo" src="resources/HaefLogo.png">
+                </div>
+                <img class="logo" src="resources/FullLogoS.png">
+                <p class="senplug">Υπό την αιγίδα του <img src="resources/SenLogo.png"></p>
+            </div>
+            <div class="social">
+                <a href="https://twitter.com/BacBake" class="twitter-follow-button" data-show-screen-name="false" data-dnt="true" data-show-count="false">Follow @BacBake</a>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div class="fb-like" data-href="https://www.facebook.com/BacBake-1830432450567301" data-width="100" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+            </div>
+        </div>
+        <a class="anchor" id="Product"></a>
+        <div class="panel" id="product">
+            <div class="prodcontainer">
+                <h2> Το BacBake </h2>
+                <h3> Ένας καινοτόμος τρόπος να προστατευθείτε από τα μικρόβια </h3>
+                <p class="show">
+                    Το BacBake αποτελεί μία καινοτόμο συσκευή απολύμανσης ηλεκτρονικών και μη αντικειμένων, η οποία βραβεύτηκε με «Έπαινο Καινοτομίας», στην Εμπορική Έκθεση της Αθήνας, The Mall Athens που διοργανώθηκε από το ΣΕΝ/JA, Σωματείο Επιχειρηματικότητας Νέων. Είναι η μοναδική συσκευή ιδιωτικής χρήσης που χρησιμοποιεί την τεχνολογία UV για την καταπολέμηση μικροβίων και ιών. To BacBake:
+                    <ul>
+                        <li>Έχει μέγεθος και σχήμα μικρού κουτιού για εύκολη μετακίνηση και χρήση</li>
+                        <li>Λειτουργεί με λάμπα υπεριωδών ακτινών (UV–C 9W)</li>
+                        <li>Αντικαθιστά τη χρήση χημικών καθαριστικών</li>
+                        <li>Απολυμαίνει σε λίγα μόνο λεπτά</li>
+                        <li>Είναι απόλυτα ασφαλές για την υγεία των χρηστών, λόγω του υλικού κατασκευής του (Plexiglas).</li>
+                    </ul>
+                    <br>
+                    <i>Η πρωτοποριακή τεχνολογία του μας επιτρέπει μία επιπλέον χρήση έκπληξη!</i>
+                    <br>
+                </p>
+                <p id="s" class="show">
+                    <br> Συγκριτικό πλεονέκτημα: οικονομική συσκευή κατάλληλη για κάθε περιβάλλον, σε σύγκριση με τους ογκώδεις, ακριβούς, επαγγελματικούς κλιβάνους απολύμανσης.
+                    <br>
+                    <br> Οφέλη του BacBake:
+                    <ul>
+                        <li>Το BacBake καταπολεμά βακτήρια, όπως τα VRE, MRSA, PSAE, που μπορούν να προκαλέσουν εξανθήματα στο δέρμα, πνευμονία, ουρολοίμωξη και άλλες σοβαρές ασθένειες.</li>
+                        <li>Αποτελεί ασπίδα προστασίας από μολύνσεις σε κοινόχρηστες επιφάνειες εργασίας, όπως οι υπολογιστές.</li>
+                        <li>Έχει εργονομικό και πρακτικό σχήμα και μέγεθος για ευκολία στην αποθήκευση, τη μετακίνηση, την επέκταση και τη χρήση.</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="imgcontainer">
+                <div class="imgcont">
+                    <img src="resources/bac_1.png">
+                </div>
+                <div class="imgcont">
+                    <img src="resources/bac_2.png">
+                </div>
+            </div>
+        </div>
+        <a class="lowanchor anchor" id="News"></a>
+        <div class="panel" id="news">
+            <div class="window newswindow">
+                <div class="tabs">
+                    <div class="tab">
+                        <input type="radio" id="tab-1" name="tab-group-1" onclick="changeTab(1);" checked>
+                        <label for="tab-1">27/1/2017</label>
+                        <div class="content">
+                            <p>
+                                Με χαρά και αισιοδοξία ξεκίνησε η ημέρα στο Χρηματιστήριο Αθηνών την Παρασκευή 27 Ιανουαρίου 2017, καθώς για πρώτη φορά στα 140 χρόνια λειτουργίας του, στο μπαλκόνι για να χτυπήσουν το καμπανάκι και να κηρύξουν πανηγυρικά την έναρξη της συνεδρίασης ήταν μαθητές και μάλιστα παιδιά που βραβεύτηκαν κατά τη συμμετοχή τους στο πρόγραμμα «Εικονική Επιχείρηση» του Σωματείου Επιχειρηματικότητας Νέων/Junior Achievement Greece. Την περσινή «Εικονική Επιχείρηση» του Ομίλου παρουσίασαν οι μαθητές του Λυκείου Κολλεγίου Ψυχικού. Με το «ΜAPP» (Marathon APPlication)- μια καινοτόμα εφαρμογή για κινητά, με στόχο την προώθηση του Αυθεντικού Μαραθωνίου της Αθήνας- κατάφεραν να κατακτήσουν το 2ο Βραβείο «Καλύτερη Εικονική Επιχείρηση 2016» και να ενθουσιάσουν τους θεατές στο Χρηματιστήριο Αθηνών.
+                                <br>
+                                <br> «Kατά τη δημιουργία του «MAPP», ζήσαμε πολύ έντονες στιγμές χαράς, λύπης, κούρασης και άγχους αλλά όταν το όραμά μας υλοποιήθηκε η συγκίνησή μας ήταν απερίγραπτη, νιώσαμε ότι πραγματικά άξιζε τον κόπο», τόνισε η πρόεδρος του «MAPP», Θεοδώρα Τζουμανίκα. «Η πορεία μας ήταν και εξακολουθεί να είναι συναρπαστική. Ευχαριστούμε πολύ το ΣΕΝ/JA Greece και το Xρηματιστήριο Αθηνών για την ευκαιρία που μας έδωσαν σήμερα! Η συμμετοχή στην έναρξη της χρηματιστηριακής συνεδρίασης αποτελεί μία μοναδική εμπειρία που λίγοι μπορούν να ζήσουν. Θα μας μείνει σίγουρα αξέχαστη!»
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" id="tab-2" name="tab-group-1" onclick="changeTab(2);">
+                        <label for="tab-2">10/2/2017</label>
+                        <div class="content">
+                            <p>
+                                Η πρώτη επίσημη παρουσίαση και προώθηση του BacBake πραγματοποιήθηκε την Παρασκευή 10 Φεβρουαρίου στα πλαίσια της «Εμπορικής μαθητικής έκθεσης 2017» στο Τhe Mall Athens. Εκεί, το BacBake σημείωσε μεγάλη απήχηση μεταξύ των επισκεπτών του The Mall Athens.
+                                <br>
+                                <br> Οι επισκέπτες ενημερώνονταν μέσω των φυλλαδίων μας και μιας συνοπτικής παρουσίασης της επιχειρηματικής ιδέας και του προϊόντος. Η παρουσίαση αυτή συνοδευόταν και από ένα “Quiz” σε μορφή ερωτήσεων πολλαπλής επιλογής, με ερωτήσεις ιατρικού περιεχομένου, που είχαν στόχο την ενημέρωση και ευαισθητοποίηση του κοινού. Με την συμμετοχή του κάθε άτομο στη διαδικασία αυτή λάμβανε μέρος σε μία κλήρωση για ένα δωρεάν BacBake, η οποία θα πραγματοποιηθεί το Σάββατο 1η Απριλίου 2017 στο «Κολλεγιακό Πανηγύρι».
+                                <br>
+                                <br> Το ερωτηματολόγιο αυτό φάνηκε να προβληματίζει έντονα τον κόσμο, που άρχισε αμέσως να αμφισβητεί την αποτελεσματικότητα των κοινών μέσων απολύμανσης, όπως τα καθαριστικά μαντιλάκια και αντισηπτικά υγρά.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column" id="column_b">
+        <a class="anchor" id="Specs"></a>
+        <div class="panel" id="specs">
+            <div class="speccontainer">
+                <div class="textcontainer">
+                    <div class="textcentercontainer">
+                        <h3>Υλικό Κατασκευής: Plexiglas</h3>
+                        <p>
+                            Το BacBake είναι κατασκευασμένο από γνήσιο ακρυλικό γυαλί PlexiGlas. Κατά την διάρκεια της δημιουργίας των πρώτων σχεδίων κρίθηκε απαραίτητη η χρήση καταλλήλων υλικών ώστε να μην εκπέμπει η συσκευή UV ακτινοβολία στο περιβάλλον. To PlexiGlas είναι το καλύτερο υλικό διότι διαθέτει την ιδιότητα να απορροφά την UV ακτινοβολία, ενώ ταυτόχρονα έχει και καλύτερο αισθητικό αποτέλεσμα.
+                        </p>
+                    </div>
+                </div>
+                <div class="piccontainer">
+                    <img src="resources/SpecIMG1.png" class="productpic">
+                </div>
+            </div>
+            <div class="speccontainer">
+                <div class="textcontainer">
+                    <div class="textcentercontainer">
+                        <h3>Λαμπτήρας UV: OSRAM HNS S 9 W G23</h3>
+                        <p>
+                            Οι λαμπτήρες HNS S 9 W G23 είναι σμικρυμενοι λαμπτήρες UVC (μικροβιοκτόνοι) που χρησιμοποιούνται σε οικιακές μονάδες απολύμανσης νερού και αέρα. Έχουν απαίτηση ενέργειας μόνο 9W και απόδοση σε UVC 2.5W. Επιλέξαμε αυτούς τους λαμπτήρες καθώς είναι οικονομικοί, έχουν κατάλληλο μέγεθος, και ο σχεδιασμός τους είναι απλός έτσι ώστε να μπορεύ ο κάθε χρήστης να τους αντικαθιστά με την ίδια ευκολία με την οποία αλλάζει μία οικιακή λάμπα.
+                        </p>
+                    </div>
+                </div>
+                <div class="piccontainer">
+                    <img src="resources/SpecIMG2.png" class="productpic">
+                </div>
+            </div>
+        </div>
+        <a class="anchor" id="Tests"></a>
+        <div class="panel" id="tests">
+            <div class="introcontainer">
+                <h2>Πειράματα και Παρατηρήσεις</h2>
+            </div>
+            <div class="relcontainer">
+                <div class="column leftcolumn">
+                    <div class="trow uprow">
+                        <img src="resources/tests/bactest_2.jpg">
+                        <p> Καλλιέργειες από δείγματα σπόγγου πίνακα πριν και μετά 20 λεπτών ακτινοβολίας </p>
+                    </div>
+                    <div class="trow downrow">
+                        <img src="resources/tests/bactest_1.jpg">
+                        <p> Καλλιέργεια δείγματος από ποντίκι υπολογιστή μετά από 30 λεπτά στο BacBake </p>
+                    </div>
+                </div>
+                <div class="column rightcolumn">
+                    <div class="trow uprow">
+                        <img src="resources/tests/uvtest_1.jpg">
+                        <p> Χαρτί με τη λέξη "Αλέξανδρος" γραμμένη με αόρατη μελάνη τοποθετείται κατα το ήμισυ μέσα στο BacBake </p>
+                    </div>
+                    <div class="trow downrow">
+                        <img src="resources/tests/uvtest_2.jpg">
+                        <p> Η σύκριση μεταξύ των δύο κομματιών της λέξης Αλέξανδρος οπου η μισή φωτίζεται με το UV στυλό και η υπόλοιπη απο το φώς που παράγει η συσκευή μας δείχνει ότι δεν βγαίνει UV εκτός τοιχώματος.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="lowanchor anchor" id="Bibliography"></a>
+        <div class="panel" id="bibliography">
+            <div class="halfcontainer left">
+                <p>
+                    Η αποτελεσματικότητα της ακτινοβολίας UV φαίνεται από το πόσο αξιοποιείται ως μέθοδος απολύμανσης στο εξωτερικό. Στη Γερμανία για παράδειγμα, υπάρχουν UV- Σήραγγες που χρησιμοποιούνται στη βιομηχανία τροφίμων για να αποστειρώσουν φαγητά σε πακέτα, αλλά και στην ιατρική και φαρμακευτική βιομηχανία. Σύμφωνα, λοιπόν, με την “Dinies” η UV δρα σε μικρό χρονικό διάστημα και με χαμηλό ποσοστό κατανάλωσης ενέργειας.
+                    <br>
+                    <br> Γενικότερα η UVC σκοτώνει το 99,9% των ιών, των μικροβίων και της μούχλας. Επιπλέον, εμποδίζει την επανεμφάνιση της μούχλας.
+                    <br>
+                    <br> Οι UVC λάμπες χρησιμοποιούνται συνήθως σε ταβάνια δωματίων σε μαγαζιά για να καθαρίζουν τον αέρα.
+                    <br>
+                    <br> Από πολλούς ειδικούς συνιστάται η προσθήκη μιας λάμπας UV στα κλιματιστικά ανάμεσα στα φίλτρα και τα πηνία ψύξης.
+                    <br>
+                    <br> Η UV ακτινοβολία προτιμάται ως μέθοδος ελέγχου της μικροβιακής ανάπτυξης καθώς είναι πολύ οικονομική σε σχέση με τις υπόλοιπες. Επιπλέον, οι λάμπες UV εκτός από τον αέρα, καθαρίζουν το νερό και διάφορες συσκευές. Ακόμη, η τεχνολογία UV χρησιμοποιείται και στην απολύμανση δωματίων ασθενών σε νοσοκομείο.
+                    <br>
+                    <br> Η BacBake αξιοποίησε την τεχνολογία αυτή και το plexiglass,το καλύτερο υλικό για να σταματάει τη ροή των ακτινών UV, απορροφά το 100% της ακτινοβολίας, σύμφωνα με τη βιβλιογραφία.
+                </p>
+            </div>
+            <div class="halfcontainer right">
+                <h3> Διαδικτυακές Πηγές: </h3>
+                <ul>
+                    <li> <a href="http://www.americanultraviolet.com/uv-germicidal-solutions/faq-germicidal.cfml#squareFootage"><h3>American Ultraviolet</h3></a></li>
+                    <li> <a href="http://www.dinies.com/english/uv-tunnel.html?gclid=CjwKEAiAoOvEBRDD25uyu9Lg9ycSJAD0cnByuhom4LhkENzPPoHuWbWUsVLfjUnBJOH99uRAr4FL7RoCrNPw_wcB"><h3>Dinies</h3></a></li>
+                    <li> <a href="http://infectioncontrol.tips/2016/01/21/1423/"><h3>InfectionControl.tips</h3></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="column" id="column_c">
+        <a class="anchor" id="Instructions"></a>
+        <div class="panel" id="instructions">
+            <div class="instructionbox">
+                <p>
+                    Στην BacBake η υγεία και η ασφάλεια είναι προτεραιότητά μας. Τονίζεται ότι ο χρήστης δεν πρέπει να έχει την λάμπα αναμμένη αν το κουτί είναι ανοιχτό, καθώς έρχεται σε απευθείας έκθεση με τις ακτίνες UVC. Αφού τοποθετηθεί το αντικείμενο μέσα στο κουτί πρέπει να χρονομετρήσει ο χρήστης την χρονική διάρκεια απολύμανσης. Όταν ολοκληρωθεί ο απαραίτητος χρόνος απολύμανσης πρέπει να σβήσει τη λάμπα και μετά να ανοίξει το κουτί για λόγους ασφαλείας.
+                    <br>
+                    <br> Παράλληλα, μία άλλη χρήση της συσκευής που προέκυψε στην πορεία της κατασκευής είναι η χρήση στην περιποίηση των νυχιών. Με την χρήση μίας κατάλληλης λάμπας (UVA) παρόμοιας με αυτών που χρησιμοποιούνται από τα κέντρα αισθητικής, μπορούν οι πελάτες μας να κάνουν ημιμόνιμο μανικιούρ στο σπίτι μας. Η λάμπα τοποθετείται στην θέση της UVC και αλλάζει τελείως την χρήση της συσκευής. Σε αυτό το σημείο πρέπει να αναφερθεί ότι οι λάμπες είναι ευδιάκριτες μεταξύ τους καθώς η UVC είναι διάφανη ενώ η λάμπα για το μανικιούρ είναι γαλακτόχρωμη.
+                    <br>
+                    <br> Αν το αντικείμενο που θέλετε να απολυμάνετε είναι μικρότερο από 25 cm:
+                    <ul>
+                        <li>I. Ανοίξτε το BacBake.</li>
+                        <li>II. Τοποθετήστε το αντικείμενο μέσα στη συσκευή.</li>
+                        <li>III. Κλείστε το συρταράκι.</li>
+                        <li>IV. Πατήστε το κουμπί να ανάψει η λάμπα και να ξεκινήσει η απολύμανση του αντικειμένου.</li>
+                        <li>V. Χρονομετρήστε 30 λεπτά.</li>
+                        <li>VI. Μετά από 30 λεπτά κλείστε το διακόπτη.</li>
+                        <li>VII. Ανοίξτε το BacBake.</li>
+                    </ul>
+                    <br>
+                    <br> Αν το αντικείμενο που θέλετε να απολυμάνετε είναι μεγαλύτερο από 25 cm:
+                    <ul>
+                        <li>I. Βγάλτε το μικρότερο Π και αναποδογυρίστε το.</li>
+                        <li>II. Τοποθετήστε το αντικείμενο.</li>
+                        <li>III. Εφαρμόστε το μικρότερο Π πάλι μέσα στο πρώτο ώστε να εισέρχεται κατά 1- 2 εκατοστά.</li>
+                        <li>IV. Βεβαιωθείτε ότι δεν υπάρχει κενό μεταξύ των δύο κομματιών plexiglass.</li>
+                        <li>V. Πατήστε το κουμπί να ανάψει η λάμπα και να ξεκινήσει η απολύμανση του αντικειμένου.</li>
+                        <li>VI. Χρονομετρήστε 30 λεπτά.</li>
+                        <li>VII. Μετά από 30 λεπτά κλείστε το διακόπτη.</li>
+                        <li>VIII. Ανοίξτε το BacBake.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <a class="anchor" id="Buy"></a>
+        <div class="panel" id="buy">
+            <div class="headlayout">
+                <h2> Αποκτήστε το δικό σας BacBake </h2>
+            </div>
+            <div class="formlayout">
+                <div class="formcontainer">
+                    <form name="buyform" method="post">
+                        <label for="first_name">Όνομα:</label>
+                        <input type="text" name="first_name" data-validation="required alphanumeric_gr">
+                        <label for="last_name">Επίθετο:</label>
+                        <input type="text" name="last_name" data-validation="required alphanumeric_gr">
+                        <label for="num">Τεμάχια:</label>
+                        <input type="number" name="num" data-validation="required number" data-validation-allowing="range[1;10]">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" data-validation="required email">
+                        <label for="phone">Τηλέφωνο (προαιρετικά):</label>
+                        <input type="text" name="phone">
+                        <input type="submit" value="Υποβολή">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a class="lowanchor anchor" id="Sponsors"></a>
+        <div class="panel" id="sponsors">
+            <div class="topcontainer">
+                <h2> Χορηγοί </h2>
+            </div>
+            <div class="bottomcontainer">
+                <div class="sponsorcontainer">
+                    <div class="srow">
+                        <img src="resources/sponsors/sponsor_ifantis.png">
+                        <img src="resources/sponsors/sponsor_vrisko.png">
+                    </div>
+                    <div class="srow">
+                        <img src="resources/sponsors/sponsor_diachel.png">
+                        <img src="resources/sponsors/sponsor_elbal.png">
+                    </div>
+                    <div class="srow">
+                        <img src="resources/sponsors/sponsor_skrimizeas.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column" id="column_d">
+        <a class="anchor" id="About"></a>
+        <div class="panel" id="about">
+            <div class="textcontainer">
+                <p>
+                    Είμαστε μαθητές του Ομίλου Νεανικής Επιχειρηματικότητας του Λυκείου Κολλεγίου Ψυχικού και συμμετέχουμε στο πρόγραμμα «Εικονική Επιχείρηση» του Σωματείου «Επιχειρηματικότητα Νέων». Η εταιρεία μας ανέπτυξε μια καινοτόμο συσκευή απολύμανσης ηλεκτρονικών και μη αντικειμένων.
+                    <br>
+                    <br> Στόχος μας είναι η καταπολέμηση βακτηρίων που βρίσκονται σε αντικείμενα καθημερινής χρήσης. Το BacBake είναι ένα μοναδικό προϊόν, κατάλληλο για το σπίτι, το σχολείο, αλλά και το γραφείο. Αν ληφθεί υπόψη ότι ένα πληκτρολόγιο υπολογιστή μπορεί να παρουσιάζει πέντε φορές μεγαλύτερη συγκέντρωση βακτηρίων από το καπάκι μιας δημόσιας τουαλέτας, το BacBake αποτελεί ασπίδα προστασίας από μολύνσεις σε κοινόχρηστες επιφάνειες εργασίας.
+                </p>
+                <h3>Ευχαριστίες</h3>
+                <p>
+                    Θα θέλαμε να ευχαριστήσουμε το Σύμβουλο – Εθελοντή κ. Γιώργο Ηγουμενάκη, τους καθηγητές μας κ. Θάνο Καραμήτσα, κ. Ελένη Μαρκοπούλου και κ. Παναγιώτη Στατήρη για την αμέριστη συμπαράστασή τους σε κάθε μας βήμα, το ΣΕΝ/JA GREECE που μας έδωσε την ευκαιρία να συμμετέχουμε στο πρόγραμμα «Εικονική Επιχείρηση» και το Σχολείο μας που αγκάλιασε την ιδέα μας και μας στήριξε στο απαιτητικό έργο μας. Ιδιαίτερα ευχαριστούμε θερμά τις τεχνικούς των εργαστηρίων του σχολείου μας, κυρία Φλώρα Πετράκη, Μόνικα Βαγδούτη και Μάρθα Πισσάνου που αφιέρωσαν προσωπικό χρόνο σε όλα τα στάδια υλοποίησης του ποιοτικού ελέγχου του προϊόντος μας.
+                </p>
+            </div>
+            <div class="gallerycontainer">
+                <div class="gallery">
+                    <div class="gallery">
+                        <div class="gallerypic fade">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="resources/gallery/img1.JPG">
+                            <div class="text"></div>
+                        </div>
+                        <div class="gallerypic fade">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="resources/gallery/img2.JPG">
+                            <div class="text"></div>
+                        </div>
+                        <div class="gallerypic fade">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="resources/gallery/img3.JPG">
+                            <div class="text"></div>
+                        </div>
+                        <div class="gallerypic fade">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="resources/gallery/img4.JPG">
+                            <div class="text"></div>
+                        </div>
+                        <a class="prev" onclick="plusSlidesManual(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlidesManual(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div class="dotcontainer">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="anchor" id="Team"></a>
+        <div class="panel" id="team">
+            <div class="toprow">
+                <h2> Η Ομάδα </h2>
+            </div>
+            <div class="names">
+                <ul class="teamlist">
+                    <li>
+                        <ul>
+                            <li><span class="headline">Executive</span></li>
+                            <li>Ελεάννα Παπαδοκωστάκη -- CEO</li>
+                            <li>Αθανασία Βωβού -- Vice President</li>
+                            <li>Θεοδώρα Τζουμανίκα -- Vice President-Mentor</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><span class="headline">Production</span></li>
+                            <li>Φοίβος Μωραϊτίνης -- Production Manager</li>
+                            <li>Οδυσσέας Λιάγκας</li>
+                            <li>Χαράλαμπος Καρούζος</li>
+                            <li>Ερρίκος Φούρλας</li>
+                            <li>Νικόλας Τσίγκος</li>
+                            <li>Νικόλας Δήμου</li>
+                            <li>Ιωάννης Αντωνόπουλος</li>
+                            <li>Ελευθέριος Καραμανής</li>
+                            <li>Γιώργος Βαμβακάς</li>
+                            <li>Κωνσταντίνος Τσιχριντζής</li>
+                            <li>Ελευθέριος Αναγνώστου</li>
+                            <li>Βασίλης Βοντίτσος</li>
+                            <li>Ολυμπία Εξαρχάκου</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><span class="headline">IT</span></li>
+                            <li>Στέλιος Μπουλιτσάκης-Λογοθέτης -- IT Manager</li>
+                            <li>Θεόδωρος Κωνσταντόπουλος -- IT Mentor</li>
+                            <li>Ιωάννης Μακρής -- Social Media</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><span class="headline">Marketing</span></li>
+                            <li>Δημήτριος Τρίγκας -- Marketing Manager</li>
+                            <li>Μαρία Τρίγκα</li>
+                            <li>Δήμητρα Πίτσαβου</li>
+                            <li>Ελένη-Άννα Στρογγύλη</li>
+                            <li>Άγγελος Χίνος</li>
+                            <li>Μάριος Ψυχογιός</li>
+                            <li>Γιώργος Τσαγκανός</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><span class="headline">Sales</span></li>
+                            <li>Έλλη Μπλέτα -- Sales Manager</li>
+                            <li>Ιωάννα Τριανταφύλλη -- Sales Deputy</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><span class="headline">HR</span></li>
+                            <li>Αντώνης Μαυροσκότης -- HR Manager</li>
+                            <li>Θωμάς Σταθόπουλος -- HR Deputy</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><span class="headline">Finance</span></li>
+                            <li>Παναγιώτης Βακιρτζής -- Finance Manager</li>
+                            <li>Αναστάστιος Θεοδόσης-Μαλιούρης -- Finance Deputy</li>
+                            <li>Παναγιώτης Κρητικόπουλος</li>
+                            <li>Κωνσταντίνος Υφαντής</li>
+                            <li>Ιωάννα Πανοπούλου</li>
+                            <li>Χριστίνα Πανοπούλου</li>
+                            <li>Ιωάννης Παπακριβόπουλος</li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <a class="lowanchor anchor" id="Contact"></a>
+        <div class="panel" id="contact">
+            <div class="contactcontainer">
+                <p>
+                    <h3>Facebook: <a href="https://www.facebook.com/BacBake-1830432450567301">BacBake</a></h3>
+                    <h3>Twitter: <a href="https://twitter.com/BacBake">@BacBake</a></h3>
+                    <h3>E-mail: contact@bacbake.com</h3>
+                    <h3>Τηλ: 210 6798100</h3>
+                    <h3>Στεφάνου Δέλτα 15, 154 52</h3>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="topbutton" onclick="topbutton();">
+        <img src="resources/up.ico" style="width:100px; height:100px;">
+    </div>
+</footer>
+
+</html>

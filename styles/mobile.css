@@ -1,0 +1,621 @@
+@font-face {
+    font-family: 'ACSciFly';
+    src: url('../resources/ACSciFly.woff') format('woff');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'AC-Muli';
+    src: url('../resources/AC-Muli.woff') format('woff');
+    font-weight: 900;
+}
+
+html,
+body {
+    --main-bg-color: #4EC8F2;
+    height: 100%;
+}
+
+body {
+    font-family: "AC-Muli";
+}
+
+h1 {
+    text-align: center;
+    line-height: 100%;
+    font-size: 200px;
+    line-height: 2em;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.panel {
+    min-height: 100%;
+    position: relative;
+}
+
+
+/* NAV */
+
+
+/* Remove margins and padding from the list, and add a black background color */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4EC8F2;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* Float the list items side by side */
+
+ul.topnav li {
+    float: left;
+}
+
+
+/* Style the links inside the list items */
+
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 2em;
+}
+
+.knockdown {
+    width: 100%;
+    background-color: #4EC8F2;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/* Change background color of links on hover */
+
+ul.topnav li a:hover {
+    background-color: #44AFD4;
+}
+
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+
+ul.topnav li.icon {
+    display: none;
+}
+
+
+@media screen and (max-width:1020px) {
+    .topnav li:not(:first-of-type) {
+        display: none;
+    }
+    .topnav li.icon#hamicon{
+        float: right;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width:1020px) {
+    ul.topnav.responsive {
+        position: relative;
+    }
+    ul.topnav.responsive li.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li {
+        float: none;
+        display: inline;
+    }
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+}
+
+ul.topnav li a:hover {
+    background-color: #44AFD4;
+}
+
+ul.topnav li a:active {
+    background-color: var(--main-bg-color);
+}
+
+ul.topnav li.icon {
+    display: none;
+}
+
+.navbar-fixed-top{
+    background-color: var(--main-bg-color);
+}
+.navbar-fixed-top li a{
+    color:white;
+    font-size:2em;
+}
+.navbar-fixed-top li a:hover {
+    background-color: #44AFD4;
+}
+
+.nav>li>a:focus{
+    background-color: var(--main-bg-color);
+}
+
+
+/* HOME */
+
+#home{
+    height:100%;
+}
+#home .logocontainer{
+    width:100%;
+    height:90%;
+      display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .plugcontainer{
+width:100%;
+height:10%;
+}
+
+#home .half{
+    width:50%;
+    height:100%;
+    display:inline-block
+}
+
+#home .half.r{
+    float:right;
+}
+
+#home .senplug{
+        position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2em;
+    font-family: "ACSciFly";
+}
+
+#home .senplug img{
+    max-width: 3em;
+}
+
+/* PRODUCT */
+
+#product {
+    background-color: #4EC8F2;
+    padding-bottom: 10%;
+    min-height: 0;
+    color:white;
+}
+
+#product p {
+    padding-top: 10%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 2em;
+    text-align: justify;
+}
+
+#product img {
+    width: 40%;
+    height: auto
+}
+
+#product h2 {
+    margin-top: 10%;
+}
+
+#product i{
+    padding-top: 10%;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 2em;
+    text-align: justify;
+}
+
+#product li{
+    font-size: 2em;
+    text-align: justify;
+    margin-left:5%;
+    margin-right:4%;
+}
+
+#product #s{
+    margin-top:-10%;
+}
+
+#product img{
+    width:60%;
+}
+
+#product .imgcont{
+     display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ABOUT */
+
+#about .textcontainer {
+    height: 100%;
+}
+
+#about .gallerycontainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about p {
+    font-size: 1.5em;
+    text-align: justify;
+    margin: 3% 3% 3% 3%;
+}
+
+#about .gallerypic {
+    display: none
+}
+
+
+/* Slideshow container */
+
+#about .gallery {
+    width: 90%;
+    position: relative;
+    margin: auto;
+}
+
+#about .gallerypic img {
+    width: 100%;
+}
+
+
+/* Next & previous buttons */
+
+#about .prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+/* Position the "next button" to the right */
+
+#about .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+#about .prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+#about .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+#about .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+#about .dot {
+    cursor: pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#about .dotcontainer {
+    text-align: center;
+}
+
+#about .active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+#about .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+
+
+/* TEAM */
+
+#team {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+#team h3 {
+    text-align: center;
+}
+
+#team .names .headline {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+#team .names ul {
+    margin-bottom: 10px;
+    white-space: nowrap;
+}
+
+#team .toprow {
+    width: 100%;
+    height: 10%;
+}
+
+#team .teamlist {
+    list-style-type: none;
+}
+
+/* SPECS */
+
+#specs {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#specs h3 {
+    font-size: 2em;
+}
+
+#specs img {
+    width: 80%;
+}
+
+
+/* NEWS */
+#news {
+    background-color: white;
+    text-align:center;
+        text-align: justify;
+    text-justify: inter-word;
+}
+
+#news p{
+    margin:3% 3% 3% 3%;
+}
+
+/* TESTS */
+
+#tests{
+    background-color:var(--main-bg-color);
+  text-align:center;
+  color:white;
+}
+
+#tests h2{
+    margin-top:3%;
+    margin-bottom:3%;
+}
+
+#tests img{
+    margin-top:5%;
+    margin: 0 auto;
+    max-width:70%;
+}
+
+#tests p{
+    margin-top:3%;
+    margin-bottom:5%;
+    font-size: 1.25em;
+}
+
+/* BILBIOGRAPHY */
+
+#bibliography ul{
+       padding: 0;
+    list-style-type: none;
+}
+
+#bibliography p{
+    margin-bottom:5%;
+    font-size: 1.25em;
+    margin:3% 3% 3% 3%;
+}
+
+/* INSTRUCTIONS */
+#instructions{
+    height:50%;
+}
+
+#instructions .instructioncontainer{
+    overflow-y:scroll;
+    height:50%;
+    margin: 3% 3% 3% 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#instructions ul{
+    list-style-type: none;
+}
+
+/* BUY */
+
+#buy {
+    background-color: var(--main-bg-color);
+    color: white;
+}
+
+#buy .headlayout {
+    width: 100%;
+    height: 5%;
+}
+
+#buy .formlayout {
+    width: 100%;
+    height: 95%;
+}
+
+#buy .formcontainer {
+    width: 80%;
+    height: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+#buy form input {
+    color: black;
+}
+
+#buy form input,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#buy form input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    #FF3F3F cursor: pointer;
+    color: white;
+}
+
+#buy form input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* SPONSORS */
+#sponsors{
+    background-color: white;
+}
+
+#sponsors h2{
+    margin-top:5%;
+}
+
+#sponsors img {
+    display:block;
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top:5%;
+}
+
+/* CONTACT */
+
+#contact {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact .contactcontainer {
+    position: relative;
+    background-color: var(--main-bg-color);
+    color: white;
+    padding: 10% 10% 10% 10%;
+}
